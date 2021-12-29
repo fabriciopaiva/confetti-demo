@@ -10,12 +10,18 @@
   Vue.use(VueConfetti)
 
   export default {
-    mounted() {
-      var b = true; 
-      if (b) {
-        this.$confetti.start();
-        setTimeout(() => {  this.$confetti.stop(); }, 2000);
+    methods: {
+      confettis() {
+        var b = true; 
+        if (b) {
+          this.$confetti.start();
+          setTimeout(() => {  this.$confetti.stop(); }, 2000);
+        }
       }
+    },
+
+    mounted() {     
+      this.confettis();
     }
   }
 </script>
