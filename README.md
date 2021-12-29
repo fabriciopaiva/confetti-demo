@@ -2,6 +2,8 @@
 
 ## Project setup
 ```
+yarn add vue-confetti
+
 yarn install
 ```
 
